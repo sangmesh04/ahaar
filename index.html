@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://kit.fontawesome.com/15e5bfcddb.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- nav bar -->
+<nav class="navbar navbar-inverse" style="background-image: linear-gradient(to right,black,rgb(46, 46, 46));">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <i class="fas fa-bars" id="menucheck"></i>                       
+      </button>
+      <a class="navbar-brand" href="#" style="font-size: 30px;color: white;">
+      AHAAR</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="nav_item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+        </svg> Home</a></li>
+        <li><a href="#diet" class="nav_item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+        </svg> Diet</a></li>
+        <li><a href="#help"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 45 35.997">
+          <path id="Icon_awesome-hands-helping" data-name="Icon awesome-hands-helping" d="M34.313,13.5H23.625v3.938a5.063,5.063,0,0,1-10.125,0V8.887L8.937,11.63A4.49,4.49,0,0,0,6.75,15.483v3.326L1.125,22.057A2.245,2.245,0,0,0,.3,25.13l5.625,9.745A2.251,2.251,0,0,0,9,35.7l7.27-4.2h9.6a4.5,4.5,0,0,0,4.5-4.5H31.5a2.248,2.248,0,0,0,2.25-2.25v-4.5h.563A1.683,1.683,0,0,0,36,18.563V15.188A1.683,1.683,0,0,0,34.313,13.5ZM44.7,10.87,39.073,1.125A2.251,2.251,0,0,0,36,.3L28.73,4.5H21.544a4.534,4.534,0,0,0-2.384.682L16.8,6.652A2.235,2.235,0,0,0,15.75,8.557v8.88a2.813,2.813,0,0,0,5.625,0V11.25H34.313a3.94,3.94,0,0,1,3.938,3.938v2l5.625-3.248A2.252,2.252,0,0,0,44.7,10.87Z" transform="translate(0.002 -0.002)"/>
+        </svg>
+         Help</a></li>
+        <li><a href="#aboutus" class="nav_item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </svg> About Us</a></li>
+        <li><a href="#contactus" class="nav_item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+          <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+        </svg> Contact Us</a></li>
+        <li id="google_translate_element_id"></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<!-- nav bar ends -->
+
+<div class="wrapper">
+
+<!--Sign up and login-->
+<div class="fixed-bg bg-1">
+<div class="main">
+  <div class="button-box">
+      <div id="btn"></div>
+  <button type="button" class="toggle" style="color: white;" id="lo" onclick="register()">Login</button>
+  <button type="button" class="toggle" id="re" onclick="login()">Register</button>
+  </div>
+
+
+<form action="login.php" class="input" id="login" method="POST">
+<input type="text" name="userid" id="input" placeholder="Enter Mobile number" required><br>
+<input type="password" name="pass" id="input" placeholder="Enter Password" required><br>
+<input type="checkbox" name="check" id="check"><span>Remember me</span><br>
+<input type="submit" value="Login" id="submit" name="submit">
+</form>
+<form class="input" action="register.php" id="register" method="POST">
+  <input type="text" name="userid" id="userid" placeholder="Enter your name" required>
+  <input type="text" pattern="[6789][0-9]{9}" name="mobile" id="mobile" placeholder="Enter mobile number" required><br>
+  <select name="job" id="job" required><option value="">select your preference</option><option value="donor">Donor</option><option value="distributor">Distributor</option><option value="need">Needy</option></select>
+  <select name="source" id="source"  ><option value="">select source from you will donate</option><option value="hotel">Hotel/Restaurant</option><option value="personal">Personal help</option><option value="charity">From trust/program</option></select>
+  <input type="text" name="sourcename" id="source_name" placeholder="Enter name of hotel/restaurant or trust/program" title="Enter name of hotel/restaurant or trust/program" >  
+  <input type="text" name="sourceaddre" id="source_addre" placeholder="Enter address of your source" >
+  <input type="number" name="distriloc" id="distri_loc" placeholder="Enter pincode of area you can cover" >
+  <input type="number" name="donloc" id="don_loc" placeholder="Enter pincode from you can donate" >
+  <input type="text" name="needaddre" id="need_addre" placeholder="Enter address to recieve food" >
+  <input type="number" name="needloc" id="need_loc" placeholder="Enter pincode to recieve food" >
+  <input type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter Password" required><br>
+    <input type="password" name="pass1" id="con_pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter Confirm Password" required >
+   <div id="condition">Password should include atleast 1 lowercase, 1 uppercase, 1 number and have minimum length 8 </div>
+    <input type="checkbox" name="check" id="check" required><span>I agree all terms and conditions</span>
+    <input type="submit" style="margin-bottom: 30px;" value="Register" id="signup" name="register">
+ 
+<!--div class="otp"><input type="number" name="otp" id="otp" placeholder="Enter OTP for validation" ></div>
+<div class="forlog"><span id="optstatus"><input type="button" value="Send OTP" onclick="optstatus()" id="regtr1" name="send_otp"></span><span><input type="submit" value="Register" id="regtr" name="register"></span></div-->
+  </form>
+</div>
+</div>
+
+<div class="scroll-bg">
+<div class="intro">
+  <h1>Introduction</h1>
+  <div class="part">
+  Humans need a wide range of nutrients to lead a healthy and active life. For providing these nutrients, good nutrition or proper intake of food in relation to the body’s dietary needs is required. An adequate, well balanced diet combined with regular physical activity is a cornerstone of good health. Poor nutrition can lead to reduced immunity, increased susceptibility to disease, impaired physical and mental development, and reduced productivity.
+<br><br>
+  A healthy diet consumed throughout the life-course helps in preventing malnutrition in all its forms as well as wide range of non-communicable diseases (NCDs) and conditions. But rapid urbanization/globalization, increased consumption of processed foods and changing lifestyles has led to a shift in dietary patterns.
+  <br><br>
+  People are consuming more foods high in energy, fats, free sugars or salt/sodium, and many do not eat enough fruits, vegetables and dietary fibers such as whole grains. So, these all factors are contributing to an imbalanced eating. A balanced and healthy diet will vary depending on the individual needs (e.g. age, gender, lifestyle, degree of physical activity), cultural context, locally available foods and dietary customs but the basic principles of what constitute a healthy diet remain the same.
+  <br><br>
+  A balanced diet is one which contains variety of foods in such quantities and proportion that the need of all nutrients is adequately met for maintaining health, vitality and general wellbeing and makes a small provision for extra nutrients to withstand short duration of leanness.
+  <br><br>
+  The major food issues of concern are insufficient/ imbalanced intake of foods/nutrients.  One of the most common nutritional problems of public health importance in India are low birth weight, protein energy malnutrition in children, chronic energy deficiency in adults, micronutrient malnutrition and diet related non-communicable diseases. Health and nutrition are the most important contributory factors for human resource development in the country.
+  <br><br>
+  Healthy dietary practices begin early in life. Recent evidences indicate that under nutrition in utero may set the pace for diet related chronic diseases in later life. Breastfeeding promotes healthy growth and improves cognitive development, and may have longer-term health benefits, like reducing the risk of becoming overweight or obese and developing NCDs later in life.
+  <br><br>
+  Since a healthy diet consists of different kinds of foods, the emphasis has been shifted from nutrient orientation to the food based approach. Foods can be categorized according to the function as- <br><br>
+<ul>
+  <li><b>Energy rich foods</b> (Carbohydrates and fats) - whole grain cereals, millets, vegetable oils, ghee, nuts and oilseeds and sugars.</li><br>
+  <li><b>Body building foods</b>  (Proteins)- Pulses, nuts and oilseeds, milk and milk products, meat, fish, poultry.</li><br>
+  <li><b>Protective foods </b> (Vitamins and minerals) - Green leafy vegetables, other vegetables, fruits, eggs, milk and milk products and flesh foods.</li><br>
+  
+</ul>
+</div>
+
+</div>
+</div>
+
+
+<div class="fixed-bg bg-2" id="diet">
+<div class="main-content">
+  <h1 id="head" >Diet during different stages of Life</h1>
+  <div class="window">
+    <!--div class="cat">
+      <svg width="80px" viewBox="0 0 15.59 15.59">
+        <path d="M14.42,11.993c-0.104-1.334-0.709-2.336-1.57-3.153c-0.479-0.449-0.906-0.563-1.414-0.563c0,0-0.204,0.005-0.041,0.212  c0.215,0.271,1.791,2.328,1.768,4.011c-0.029,1.948-1.958,1.837-1.958,1.837c0.812-1.542,0.402-3.001,0.276-3.512  c-0.238-0.943-0.709-1.857-1.417-2.738C9.191,6.988,8.312,6.468,7.425,6.523c-0.379-0.654-0.716-1.18-1.011-1.61  C8.02,3.479,6.974,2.787,6.063,0c-0.211,0.591-0.38,1.028-0.507,1.31c-0.644-0.08-2.071-0.08-2.714,0  C2.716,1.028,2.547,0.591,2.336,0C1.423,2.794,0.374,3.467,1.999,4.909c0.173,3.278,0.849,4.149,1.942,5.732  c0.9,1.304,0.675,1.768,1.098,3.569c-3.197,2.014,2.223,1.241,3.063,1.2C10.266,15.305,14.777,16.6,14.42,11.993z"></path>
+      </svg>
+    </div-->
+    <div class="illustration">
+      <div class="concepts">
+        <h1 class="title" id="title">
+          Diet for an Infant
+        </h1><br><h3 class="subhead" id="subhead" style="text-align: center;">New born to 5 years       </h3><hr>
+        <div class="details" id="details">
+          If you have an infant or kid at your place, make sure that they get enough nutrition in their growing years of age. Babies should be exclusively breastfed for the first six months of life. Breast feeding should be started within
+           an hour after delivery and do not discard first milk (colostrum), as it boosts the immunity of the baby and protects baby from several infections. Exclusive breast-feeding ensures safe nutrition to the infant thereby reducing the
+            risk of infections and also helps in the overall development of the baby   Breast-milk is the most natural and wholesome food for growth and healthy development of infants.  Breast –fed infants do not need additional water.  After six months, 
+            you can feed your baby with complementary foods while continuing to breastfeed. Complementary food should be rich in nutrients. These complementary foods can be prepared at home from commonly used food materials such as cereals (wheat, rice, jowar, bajra, etc.);
+             pulses (grams/dals), nuts and oilseeds (groundnut, sesame, etc.), oils (groundnut oil, sesame oil etc.), sugar and jaggery. You can feed your baby to variety of soft foods like potatoes, porridge, cereals, or even eggs. 
+            <br><br><b>According to WHO</b><br>
+            <ul>
+              <li>Infants should be breastfed exclusively during the first 6 months of life.</li><br>
+              <li>Infants should be breastfed continuously until 2 years of age and beyond.</li><br>
+              <li>From 6 months of age, breast milk should be complemented with a variety of adequate, safe and nutrient dense complementary foods.</li><br>
+            </ul>
+            Infants cannot eat large quantities of food at a single time so they should be fed small quantities at frequent intervals (3-4 times a day). Also, the food should be of semi-solid consistency so that the infants can swallow it easily.  A balanced diet is the key to protect your child against nutritional deficiencies. Protein Energy Malnutrition more commonly affects children between the ages of 6 months and 5 years. Malnutrition is defined as <b>"a state of poor nutrition caused by insufficient or unbalanced diet".</b>
+          </div>
+      </div>
+  </div>
+  <div class="option-wrapper">
+    <div class="option active" data-option="dusk" onclick="concepts()"><svg xmlns="http://www.w3.org/2000/svg" width="26.997" height="36" viewBox="0 0 26.997 36">
+      <path id="Icon_awesome-baby" data-name="Icon awesome-baby" d="M13.5,11.25A5.625,5.625,0,1,0,7.875,5.625,5.623,5.623,0,0,0,13.5,11.25ZM9.745,28.744l1.8-2.25-4.324-3.6L3.994,26.93a2.818,2.818,0,0,0-.056,3.445l3.375,4.5a2.813,2.813,0,1,0,4.5-3.375Zm10.034-5.85-4.324,3.6,1.8,2.25L15.188,31.5a2.813,2.813,0,0,0,4.5,3.375l3.375-4.5a2.818,2.818,0,0,0-.056-3.445l-3.227-4.036Zm6.708-12.7a2.816,2.816,0,0,0-3.916-.689l-2.855,2a10.876,10.876,0,0,1-12.431,0l-2.855-2a2.811,2.811,0,0,0-3.234,4.6l2.855,2a16.684,16.684,0,0,0,3.825,1.962V20.25h11.25V18.084a16.684,16.684,0,0,0,3.825-1.962l2.855-2A2.818,2.818,0,0,0,26.487,10.2Z" transform="translate(-0.003)"/>
+    </svg>
+    
+    0 - 5 years</div>
+    <div class="option" data-option="day" onclick="pradnya()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 33.12 33.119">
+      <path id="Icon_map-playground" data-name="Icon map-playground" d="M5.188,22.422a3.861,3.861,0,0,0,0-7.719,3.861,3.861,0,0,0,0,7.719Zm21.046,6.636a.382.382,0,0,1,.534.084l.695.988a.416.416,0,0,1-.084.552l-5.1,3.807a.386.386,0,0,1-.535-.085l-.693-.988a.414.414,0,0,1,.084-.55l5.1-3.807Zm-5.762-4.908L18.45,20.5l-1.061.8,2.022,3.665Zm-4.717-8.515L7.893,1.44l-1.5.01,8.3,14.99Zm7.4,7.51A4.567,4.567,0,0,1,25.2,22.32h7.2c1.421,0,2.16,1.43,2.16,2.883A1.906,1.906,0,0,1,32.4,27.36H25.92l-7.8,6.121c-2.742,2.03-4.4-.2-4.4-.2L7.607,27a3.745,3.745,0,0,1,.426-4.728l8.452-6.19a1.961,1.961,0,0,1,2.8.247,2.084,2.084,0,0,1-.249,2.877l-5.411,4.073,3.887,3.948Z" transform="translate(-1.44 -1.44)"/>
+    </svg>  6 - 17 years</div>
+    <div class="option" data-option="sunset" onclick="pratibha()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 12 30">
+      <path id="Icon_material-pregnant-woman" data-name="Icon material-pregnant-woman" d="M13.5,6a3,3,0,1,1,3,3A2.99,2.99,0,0,1,13.5,6ZM24,19.5A4.928,4.928,0,0,0,21,15a4.5,4.5,0,0,0-9,0V25.5h3V33h4.5V25.5H24Z" transform="translate(-12 -3)"/>
+    </svg> Pregnant woman    </div>
+    <div class="option" data-option="night" onclick="naipunya()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36.001 35.621">
+      <path id="Icon_simple-goldenline" data-name="Icon simple-goldenline" d="M24.566,32.487a3.322,3.322,0,1,1-3.318-3.323A3.317,3.317,0,0,1,24.566,32.487Zm-7.073-.258L9.7,34.05a.483.483,0,0,1-.588-.322.8.8,0,0,1,.137-.6L17.073,20.36a2.261,2.261,0,0,1,1.155-.823,1.869,1.869,0,0,1,1.308.24l12.526,7.879s.543.221.522.657a.588.588,0,0,1-.5.514l-7.56,1.767a3.715,3.715,0,0,0-3.234-1.866,3.776,3.776,0,0,0-3.756,3.5h-.042ZM5.847,10.946,8.116,3.051a.48.48,0,0,1,.571-.363c.279.046.455.41.455.41l7.333,13.047a2.24,2.24,0,0,1,.159,1.411,1.866,1.866,0,0,1-.851,1.024L2.8,25.665s-.461.365-.821.126a.614.614,0,0,1-.2-.694l2.208-7.674a3.761,3.761,0,0,0,1.867-6.493v.017Zm.8,2.787a3.323,3.323,0,1,1-3.321-3.319,3.322,3.322,0,0,1,3.321,3.319Zm23.5-2.6,5.715,6.27a.478.478,0,0,1,0,.667.786.786,0,0,1-.591.167l-14.961-.593a2.247,2.247,0,0,1-1.28-.6,1.838,1.838,0,0,1-.423-1.257L19.374,1S19.3.421,19.692.238a.609.609,0,0,1,.7.193L25.37,5.874a3.677,3.677,0,0,0-.44,1.755,3.761,3.761,0,0,0,3.764,3.756,3.807,3.807,0,0,0,1.446-.3l0,.042Zm1.875-3.476a3.541,3.541,0,1,0,0,.024V7.656Z" transform="translate(0 -0.188)"/>
+    </svg>
+    18 - 59 years</div>
+    <div class="option" data-option="dusk" onclick="capture()">    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16.024 33.75">
+      <g id="Icon_ionic-ios-man" data-name="Icon ionic-ios-man" transform="translate(-9.984 -1.125)">
+        <path id="Path_13" data-name="Path 13" d="M17.979,7.5h-.014a3.185,3.185,0,1,1,3.2-3.185A3.193,3.193,0,0,1,17.979,7.5Z"/>
+        <path id="Path_14" data-name="Path 14" d="M15.553,34.875a1.921,1.921,0,0,1-1.9-2.138l.07-19.519h-.7V20.6a1.706,1.706,0,0,1-.45,1.287,1.494,1.494,0,0,1-2.138,0,1.694,1.694,0,0,1-.45-1.287v-8.55a4.061,4.061,0,0,1,.97-2.7A3.591,3.591,0,0,1,13.7,8.086h8.6a3.574,3.574,0,0,1,2.742,1.273,4.043,4.043,0,0,1,.97,2.693V20.6a1.667,1.667,0,0,1-.464,1.287,1.58,1.58,0,0,1-2.18,0A1.667,1.667,0,0,1,22.9,20.6V13.219h-.633V32.737a1.948,1.948,0,1,1-3.881.042V22.852h-.844v9.907A2,2,0,0,1,15.553,34.875Z"/>
+      </g>
+    </svg>  60 years and above </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="scroll-bg" id="help">
+  <a href="#"><button>Want Help or Want to Help?</button></a>
+</div>
+<div class="fixed-bg bg-3">
+<div id="current">
+  <h1>Help us to help Needy</h1>
+  In India, the household food waste estimate is 50 kg per capita per year, or 68,760,163 tones a year. 
+<br><br>
+  Hotels — produce 289,700 tone of waste each year, including 79,000 tones of food waste (9% total food waste from the sector). Pubs — produce 873,800 tones of waste each year, including 173,000 tones of food waste (19% total food waste from the sector)
+<br><br>
+According to FAO estimates in 'The State of Food Security and Nutrition in the World, 2020 report, 189.2 million people are undernourished in India. 
+<br><br>
+By this measure 14% of the population is undernourished in India.
+<br><br>
+ Also, 51.4% of women in reproductive age between 15 to 49 years are anemic.
+<br><br>
+In the 2020 Global Hunger Index, India ranks 94th out of the 107 countries 
+<br><br>
+</div>
+</div>
+<div class="scroll-bg" id="aboutus">
+<div id="about">
+    <h1>Who we are..?</h1>
+    <h3>
+We are part of community who are working for needy people who get food and have healthy life for them also. <br><br>
+Needy person will register themselves as needy for sending data to distributor.
+<br><br>
+People will register themselves according to their wish and possibility as ‘distributor’ or ‘donor’ or ‘both’.
+<br><br>
+Distributor will update the need of food per head in the area (roughly).
+<br><br>
+Donor will able to see the requirement of food and available good quality of food and will confirm to collect the food from the given location.
+<br><br>
+Distributor will likely go for collection and hand over to needy people in area.
+</h3>
+    <h3>
+      Till now we have served <b>1000+</b> families. <br><br>
+      <b>24+</b> hotels and restaurant <b>15+</b> trusts and <b>150+</b>volunteers are being part of program.
+    </h3>
+</div>
+</div>
+<footer>
+  <div class="address" id="contactus">
+    'AHAAR', <br> Head Office, <br> Near PICT, <br>Dhankawadi, <br>Pune-43.
+  </div>
+  <div class="social">
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </svg></a> 
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </svg></a>
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+    </svg></a>
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+    </svg></a>
+  </div>
+  <div class="suggest">
+    <form action="#" method="POST">
+      <input type="text" name="suggest_name" id="suggest_name" placeholder="Let us know your name" required><br>
+      <textarea name="suugest" id="suggest" cols="30" rows="5" placeholder="Any suggestion or query" required></textarea><br>
+      <input type="submit" value="Send" id="send">
+    </form>
+  </div>
+  </footer>
+</div>
+
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage:'en'}, 'google_translate_element_id');
+      }
+</script>
+
+<script>
+ /* var area = document.getElementById('optstatus');
+  var initbtn = document.getElementById('regtr1');
+  function optstatus(){
+ var mobile = document.getElementById("mobile");
+ var otp = document.getElementById("otp");
+ var btn = document.getElementById('regtr1');
+ if(mobile.value != '' && mobile.value.length ==10){
+  area.innerHTML = '<p>OTP sent!</p>';
+    initbtn.style.display = "none";
+  var data = new FormData();
+  data.append('mobile', document.getElementById("mobile").value);
+  data.append('otp', document.getElementById("otp").value);
+  btn.style.display = 'none';
+  // (B2) AJAX CALL
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', "otp.php");
+  xhr.onload = function () {
+    console.log(this.response);
+  };
+  xhr.send(data);
+  return false;
+}else{
+  alert("Kindly enter valid details!");
+}
+}*/
+</script>
+
+
+
+<script>
+ var job = document.getElementById('job');
+  var source = document.getElementById("source");
+  var source_name = document.getElementById("source_name");
+  var don_loc = document.getElementById("don_loc");
+  var distri_loc = document.getElementById("distri_loc");
+  var need_loc = document.getElementById("need_loc");
+  var source_addre = document.getElementById("source_addre");
+  var need_addre = document.getElementById("need_addre");
+  setInterval(function() {
+            if(job.value =='donor'){
+              source.style.display = "block";
+               don_loc.style.display = "block";
+               source_addre.style.display = "block";
+               if(source.value != 'personal' && source.value !=''){
+               source_name.style.display = "block";
+               }else{
+                 source_name.style.display = "none";
+               }
+           }else{
+             source.style.display = "none";
+               don_loc.style.display = "none";
+               source_name.style.display = "none";
+               source_addre.style.display = "none";
+           }
+           if(job.value =='distributor'){
+               distri_loc.style.display = "block";
+           }else{
+               distri_loc.style.display = "none";
+           }
+           if(job.value == 'need'){
+               need_loc.style.display = "block";
+               need_addre.style.display = "block";
+           }else{
+               need_loc.style.display = "none";
+               need_addre.style.display = "none";
+           }
+}, 200);
+
+  var x = document.getElementById("login");
+  var y = document.getElementById("register");
+  var z = document.getElementById("btn");
+  var a = document.getElementById("re");
+  var b =document.getElementById("lo");
+  var myInput = document.getElementById("pass");
+  var conpass = document.getElementById("con_pass");
+  var otp = document.getElementById("otp");
+ function validate(){
+   /*  if (myInput.value == ''){
+         alert("Password can't be empty");
+         return false;
+     }
+     var lowerCaseLetters = /[a-z]/g;
+        if(myInput.value.match(lowerCaseLetters)) {
+          
+        } else {
+          alert('Password should include lower case!');
+          return false;
+      }
+      
+        // Validate capital letters
+        var upperCaseLetters = /[A-Z]/g;
+        if(myInput.value.match(upperCaseLetters)) {
+          
+        } else {
+         alert('Password should include uppercase!');
+         return false;
+        }
+      
+        // Validate numbers
+        var numbers = /[0-9]/g;
+        if(myInput.value.match(numbers)) {
+          
+        } else {
+          alert('Password should include number!');
+          return false;
+        }
+      
+        // Validate length
+        if(myInput.value.length >= 8) {
+          
+        } else {
+          alert('Password should have minimum 8 character!');
+          return false;
+        }*/
+        if(otp.value >1000 && otp.value<9999){
+
+        }else{
+          alert("Enter valid OTP value!");
+          return false;
+        }
+        if((myInput.value) == (conpass.value)){
+            
+        }else{
+            alert('Both passwords should match!');
+            return false;
+        }
+ }
+
+
+  function login(){
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+      a.style.color = "white";
+      b.style.color = "black";
+  }
+  function register(){
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.left = "0px";
+      b.style.color = "white";
+      a.style.color = "black";
+  }
+
+
+
+function getLocation() {
+ if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+   alert("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+ Latitude = position.coords.latitude ;
+ Longitude = position.coords.longitude;
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>
