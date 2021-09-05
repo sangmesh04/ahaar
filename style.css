@@ -184,6 +184,9 @@ span{
     transition: fill 1s ease;
   }*/
   @media screen and (max-width:550px) {
+    .scroll-bg{
+      width: 101% !important;
+    }
     .fixed-bg{
       width: 101% !important;
     }
@@ -192,15 +195,13 @@ span{
     }
     footer{
       display: block !important;
+      width: 101%;
     }
     footer .address{
       padding-bottom: 30px !important;
     }
     #about{
       padding: 10px !important;
-    }
-    .navbar{
-      width: 90% !important;
     }
     .intro{
       padding: 30px 15px !important;
@@ -222,7 +223,6 @@ span{
     }
     .main-content {
       margin: 0 auto 0;
-      width: 111%;
       padding-bottom: 10% !important;
       margin-top: -3% !important;
     }
